@@ -1,0 +1,136 @@
+{
+	"id": "b1c5442a-f6f4-e798-5740-3d376fa39ae1",
+	"name": "JI205_node_API_todos",
+	"description": "",
+	"order": [
+		"9339e724-51f8-4827-c14f-bdcb446808e7",
+		"3de0dd90-a4e5-b55a-b609-dfc2637097af",
+		"c221a910-3a48-e973-d172-6b35c865d6e4",
+		"af9eac64-9b48-985d-10ae-e8afd9c883f3",
+		"7a34d645-1144-3e2b-7d3a-bc0691076ebc"
+	],
+	"folders": [],
+	"timestamp": 1443571755794,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "3de0dd90-a4e5-b55a-b609-dfc2637097af",
+			"headers": "",
+			"url": "localhost:3000/api_v1/todos/",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443573497328,
+			"name": "Getting all todos #local",
+			"description": "",
+			"collectionId": "b1c5442a-f6f4-e798-5740-3d376fa39ae1",
+			"responses": []
+		},
+		{
+			"id": "7a34d645-1144-3e2b-7d3a-bc0691076ebc",
+			"headers": "",
+			"url": "localhost:3000/api_v1/todos/560b284557f68c6c15000001",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443573362608,
+			"name": "Deleting todo #local",
+			"description": "",
+			"collectionId": "b1c5442a-f6f4-e798-5740-3d376fa39ae1",
+			"responses": []
+		},
+		{
+			"id": "9339e724-51f8-4827-c14f-bdcb446808e7",
+			"headers": "",
+			"url": "localhost:3000/api_v1/todos",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "b1c5442a-f6f4-e798-5740-3d376fa39ae1",
+			"data": [
+				{
+					"key": "author_name",
+					"value": "Matheus S.",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "text",
+					"value": "Awesome!",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Creating new todo #local",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1443571824468,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "af9eac64-9b48-985d-10ae-e8afd9c883f3",
+			"headers": "",
+			"url": "localhost:3000/api_v1/todos/560b284557f68c6c15000001",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"collectionId": "b1c5442a-f6f4-e798-5740-3d376fa39ae1",
+			"data": [
+				{
+					"key": "text",
+					"value": "New text",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Updating todo #local",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1443573124711,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c221a910-3a48-e973-d172-6b35c865d6e4",
+			"headers": "",
+			"url": "localhost:3000/api_v1/todos/560b284557f68c6c15000001",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443573352414,
+			"name": "Getting single todo #local",
+			"description": "",
+			"collectionId": "b1c5442a-f6f4-e798-5740-3d376fa39ae1",
+			"responses": []
+		}
+	]
+}
