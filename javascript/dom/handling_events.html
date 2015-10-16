@@ -1,0 +1,83 @@
+<html>
+    <!-- handling_events -->
+    <style type="text/css">
+        .is-hidden {
+            display: none;
+        }
+    </style>
+    <body>
+        
+        <div class="container" style="text-align: center">
+            <button onclick="raiseAlert()">
+                Click here to raise alert
+            </button>
+            
+            <button class="js-btn-reveal">
+                Click here to reveal the secret message
+            </button>
+
+            <button class="js-btn-color">
+                Click to colour this little world
+            </button>
+
+            <button class="js-more-wise-words">
+                More wise words
+            </button>
+
+            <p class="hidden-secret is-hidden">
+                "There is no wealth like knowledge, and no poverty like ignorance."
+                <br> - Buddha
+                <button class="js-btn-hide">Hide this secret</button>
+            </p>
+        </div>
+
+        <script type="text/javascript">
+
+            function raiseAlert() {
+                alert("AAAAAAAAAAAAAlert!");
+            }
+
+            function revealSecret() {
+                var hiddenSecret = document.querySelectorAll(".hidden-secret")[0];
+                var classes = hiddenSecret.className;
+                hiddenSecret.className = classes.replace("is-hidden", "");
+            }
+
+            function hideSecret() {
+                var hiddenSecret = document.querySelectorAll(".hidden-secret")[0];
+                hiddenSecret.className += " is-hidden";
+            }
+
+            function addColor() {
+                var body = document.getElementsByTagName("body")[0];
+                body.style.backgroundColor = "lightblue";
+            }
+
+            function addMoreWiseWords() {
+                var container = document.getElementsByClassName("container")[0];
+                var element = document.createElement("p");
+                
+                element.innerHTML = "\"Share your knowledge its a way to achieve immortality.\"<br> - Dalai Lama";
+
+                container.appendChild(element);
+            }
+
+            // Selecting `.js-btn-reveal`
+            var btnReveal = document.getElementsByClassName("js-btn-reveal")[0];
+            btnReveal.addEventListener("click", revealSecret);
+
+            // Alternatively we can use `querySelectorAll()`
+            var btnHide = document.querySelectorAll(".js-btn-hide")[0];
+            btnHide.addEventListener("click", hideSecret)
+
+            // Coloring div
+            var btnColor = document.querySelectorAll(".js-btn-color")[0];
+            btnColor.addEventListener("click", addColor)
+
+            // Injecting into DOM
+            var btnMoreWiseWords = document.querySelectorAll(".js-more-wise-words")[0];
+            btnMoreWiseWords.addEventListener("click", addMoreWiseWords);
+
+        </script>
+    </body>
+</html>
