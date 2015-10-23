@@ -1,0 +1,56 @@
+<html encoding="utf8">
+    <head>
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' 
+            rel='stylesheet' type='text/css'>
+
+        <!-- TODC Bootstrap theme -->
+        <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/bootstrap/css/todc-bootstrap.min.css">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="static/dist/css/base.min.css">
+
+        <title>My first app</title>
+    </head>
+    <body>
+        <div class="content">
+
+            <!-- Main row -->
+            <div class="row">
+                <!-- Left box -->
+                <div class="col-xs-3"></div>
+
+                <!-- Middle -->
+                <div class="col-xs-6">
+                    <h2 class="title">My todo list</h2>
+                    <div class="todo-add">
+                        <input class="todo-add-author-name" type="text" value="Matheus S." readonly>
+                        <input class="todo-add-text" type="text">
+                        <button class="js-todo-add-btn">Add todo</button>
+                    </div>
+                    <ul id="todos-list" class="todos-list"></ul>
+                </div>
+
+                <!-- Right box -->
+                <div class="col-xs-3"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer></footer>
+    
+        <!-- JS -->
+        <!-- Utils -->
+        <script src="static/js-utils/jquery-1.11.3.min.js" type="text/javascript"></script>
+        
+        <!-- Scripts -->
+        <script src="static/endpoints.js"></script>
+        <script src="static/js/TodosList_javascript.js"></script>
+        <!-- <script src="static/js/TodosList_jquery.js"></script> -->
+        
+        <!-- Auto generated -->
+        <!-- <script src="static/dist/js/scripts.min.js" type="text/javascript"></script> -->
+    </body>
+</html>

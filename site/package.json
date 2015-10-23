@@ -1,0 +1,15 @@
+{
+    "name": "simple-website",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "gulp": "latest",
+        "gulp-concat": "latest",
+        "gulp-rename": "latest",
+        "gulp-uglify": "latest",
+        "gulp-minify-css": "latest",
+        "gulp-notify": "latest",
+        "gulp-ruby-sass": "latest",
+        "gulp-livereload": "latest",
+        "del": "latest"
+    }
+}

@@ -11,6 +11,9 @@ console.log(object_1, object_2);  // They are the same!
 // associated with it. This second object is known as a prototype, and the
 // first object inherits properties from the prototype.
 // http://stackoverflow.com/a/8433493/3147039
+// http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/
+// http://yehudakatz.com/2011/08/12/understanding-prototypes-in-javascript/
+
 function Pet(name, species) {
     this.name = name;
     this.species = species;

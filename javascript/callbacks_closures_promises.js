@@ -12,6 +12,18 @@ function usingCallback(callback) {
 
 usingCallback(function(data){
     console.log(data);
+    
+    usingCallback(function(data){
+        console.log(data);
+        
+        usingCallback(function(data){
+            console.log(data);
+            
+            usingCallback(function(data){
+                console.log(data);
+            })
+        })
+    })    
 })
 
 
@@ -65,7 +77,7 @@ function testPromise() {
                 function() {
                     // We fulfill the promise !
                     resolve(thisPromiseCount);
-                }, 3000);
+                }, 4000);
         });
 
     // We define what to do when the promise is fulfilled

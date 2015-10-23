@@ -1,0 +1,13 @@
+<div class="todo-header">
+    <span class="todo-author">
+        {{todo.author_name}}
+    </span> added
+</div>
+<div class="todo-content">
+    <input type="checkbox"
+        name="todo-checkbox"
+        value="{{todo._id}}"
+        class="todo-checkbox"
+        ng-click="finishTodo(todo._id)"/> <!-- Passing todo id into method -->
+        <span class="todo-text">{{todo.text}}</span>
+</div>

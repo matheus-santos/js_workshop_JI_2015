@@ -1,0 +1,44 @@
+/* Setting */
+/* HTML/Body */
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: medium;
+}
+
+/* Components */
+h2 {
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.todos-list {
+  list-style-type: none;
+}
+
+.todo-add {
+  text-align: center;
+}
+
+.todo {
+  margin: 15px 0;
+}
+
+.todo-author {
+  font-weight: bold;
+}
+
+.todo-header {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.todo-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
